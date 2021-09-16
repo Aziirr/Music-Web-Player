@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MP3 Player</title>
+    <script src="/UI.js"></script>
+    <script src="/Net.js"></script>
+    <script src="/Music.js"></script>
+    <script src="/Main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="/style">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+</head>
+
+<body>
+<div id="main">
+    <div id="upper">
+        <div id="albums_list"></div>
+        <div id="songs_list">
+            <h1>MP3 Player</h1>
+        </div>
+    </div>
+    <div id="lower">
+        <div id="volume_bar">
+            <div id="actual_volume_bar"></div>
+        </div>
+        <div id="progress_bar">
+            <div id="actual_progress"></div>
+        </div>
+        <div id="current_song_name" class="unselectable"></div>
+        <div id="navs_buttons" class="unselectable">
+            <img src="/icons/rewind.svg" alt="previous" id="previous">
+            <img src="/icons/play.svg" alt="play" id="play_pause">
+            <img src="/icons/forward.svg" alt="next" id="next">
+        </div>
+        <div id="time" class="unselectable"></div>
+        <audio id="audio"></audio>
+    </div>
+</div>
+</body>
+</html>
